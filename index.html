@@ -73,59 +73,100 @@
             <button type="order">Order Now</button>
         </div>
         <br><br>
-        <div class="f1"></div>
+        
         <div class="f1"><img src="https://static.toiimg.com/photo/51892394.cms" id="pizza" onmouseover="resizep()"  onmouseout="sizep()" alt="imag1">
             <h1><b>Pizza</b></h1>
             <button type="order">Order Now</button>
         </div>
-        <div class="f1"></div>
+        
         <div class="f1"><img src="image5.jpeg" id="shahi" onmouseover="resizes()"  onmouseout="sizess()" alt="imag1">
             <h1><b>Shahi Paneer</b></h1>
             <button type="order">Order Now</button>
         </div>
-        <div class="f1"></div>
+        
         <div class="f1"><img src="image6.jpg" id="fish" onmouseover="resizef()"  onmouseout="sizef()" alt="imag1">
             <h1><b>Fish Kabab</b></h1>
             <button type="order">Order Now</button>
         </div>
-        <div class="f1"><img src="image4.jpeg" id="gulab" onmouseover="resizeg()"  onmouseout="sizeg()" alt="imag1">
+        <!-- <div class="f1"><img src="image4.jpeg" id="gulab" onmouseover="resizeg()"  onmouseout="sizeg()" alt="imag1">
             <h1><b>Gulab Jamun</b></h1>
             <button type="order">Order Now</button>
+        </div> -->
+    </div>
+    <br><br><br><br>
+    <div class="container">
+        <div class="f1" ><img src="golgappe.jpg" id="briyani" onmouseover="resize()"  onmouseout="size()" alt="imag1">
+            <h1><b>Golgappe</b></h1>
+            <button type="order">Order Now</button>
         </div>
+        <br><br>
+        <div class="f1"><img src="Aloo-Tikki-Chaat61.webp" id="dal" onmouseover="resized()"  onmouseout="sized()" alt="imag1">
+            <h1><b>Dal Makhani</b></h1>
+            <button type="order">Order Now</button>
+        </div>
+        <br><br>
+        
+        <div class="f1"><img src="https://static.toiimg.com/photo/51892394.cms" id="pizza" onmouseover="resizep()"  onmouseout="sizep()" alt="imag1">
+            <h1><b>Pizza</b></h1>
+            <button type="order">Order Now</button>
+        </div>
+        
+        <div class="f1"><img src="image5.jpeg" id="shahi" onmouseover="resizes()"  onmouseout="sizess()" alt="imag1">
+            <h1><b>Shahi Paneer</b></h1>
+            <button type="order">Order Now</button>
+        </div>
+        
+        <div class="f1"><img src="image6.jpg" id="fish" onmouseover="resizef()"  onmouseout="sizef()" alt="imag1">
+            <h1><b>Fish Kabab</b></h1>
+            <button type="order">Order Now</button>
+        </div>
+        <!-- <div class="f1"><img src="image4.jpeg" id="gulab" onmouseover="resizeg()"  onmouseout="sizeg()" alt="imag1">
+            <h1><b>Gulab Jamun</b></h1>
+            <button type="order">Order Now</button>
+        </div> -->
     </div>
     <br><br><br><br>
     <img src="live order track.png" width="100%">
     <div class="freq">
-        <h1>FREQUENTLY ASKED QUEStions</h1>
+        <h1>FREQUENTLY ASKED QUESTIONS</h1>
     </div>
     <div class="summary">
-        <details>    
+        <details class="det">    
             <summary class="sum">
                 Within how much time will my offered be delivered ?
             </summary>
-            <p>Zomato ensures fastest and safest delivery of your food stuff. We try to deliver the food as soon as possible and 
+            <p class="para">Zomato ensures fastest and safest delivery of your food stuff. We try to deliver the food as soon as possible and 
                 within the given time only. But due to traffic and other unavoidable conditions the order might be late by maximum
                 5 to 10 minutes.
             </p>
         
         </details>
-        <details>
-            <summary>
-                how ar
+        <details class="det">
+            <summary class="sum">
+                What will Zomato charge me for creating a page on its platform?
             </summary>
-            <p>I am fine tell me about u</p>
+            <p class="para">Creating a restaurant page on Zomato is free of cost. You can maintain your page by replying to reviews and do a lot more without any charges.</p>
         </details>
-        <details>
-            <summary>
-                how are u?
+        <details class="det">
+            <summary class="sum">
+                What all documents are required for registering on online ordering?
             </summary>
-            <p>I am fine tell me about u</p>
+            <p class="para">Registration for online ordering requires:
+                <ol>
+                    <li>FSSAI certificate</li>
+                    <li>PAN Cardli</li>
+                    <li>GST certificate </li>
+                </ol>
+                    
+                
+            </p>
         </details>
-        <details>
-            <summary>
-                how are u?
+        <details class="det">
+            
+            <summary class="sum">
+                What happens if the average order value of Zomato orders is very low?
             </summary>
-            <p>I am fine tell me about u</p>
+            <p class="para">Average order value from our platform is generally more than Rs 250. However, in some cases, users want to try out your place by ordering for lesser amount. But we have observed that they eventually come back with higher value orders if they like your food.</p>
         </details>
     </div>
     <footer>
@@ -266,7 +307,7 @@ function copyToClipboard() {
 function resize(){
     // console.log("hello");
     var img = document.getElementById("briyani");
-    img.style.transform = "scale(1.5)";
+    img.style.transform = "scale(1.3)";
     img.style.transition = "transform 0.25s ease";
 }
 function size(){
@@ -276,7 +317,7 @@ function size(){
 }
 function resized(){
     var img = document.getElementById("dal");
-    img.style.transform = "scale(1.5)";
+    img.style.transform = "scale(1.3)";
     img.style.transition = "transform 0.25s ease";
 }
 function sized(){
