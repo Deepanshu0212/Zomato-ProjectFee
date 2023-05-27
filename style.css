@@ -1,7 +1,64 @@
 body{
     margin: 0;
 }
-
+.top {
+    height: 400px;
+    width: 100%;
+    background-image: url(backPhoto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+     transition: background-image 1s ease;
+    /* animation: slideRight 3s linear infinite; */
+}
+.login{
+    position: relative;
+    left:220px;
+}
+.create{
+    position: relative;
+    left:120px;
+}
+.best{
+    position: relative;
+    left:100px;
+}
+.bars{
+    position: relative;
+    left:135px;
+}
+  @keyframes slideRight {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+} 
+  
+  /* #zomato-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: px;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 2;
+  }
+  
+  @keyframes imageAnimation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  } */
+ 
 .f1{
     margin:5px;
     width: 255px;
@@ -135,8 +192,29 @@ footer img{
     transform: translate(-50%, -50%);
     
    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
-    
-}
+   /* opacity: 0;
+   animation: fade-in 0.5s ease-in-out forwards; */
+   /* transform: translateX(-100%);
+   animation: slide-in 0.5s ease-in-out forwards;
+ }
+ 
+ @keyframes slide-in {
+   from {
+     transform: translateX(-100%);
+   }
+   to {
+     transform: translateX(0);
+   } */
+ }
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 .bigdiv.visible{
     transform: translateY(0) scale(1);
 }
@@ -259,4 +337,21 @@ footer img{
     font-size: xx-large;
     font-weight: bold;
     font-family: cursive;
+}
+.freq{
+    padding-left: 500px;
+    font-size: 20px;
+    font-family:cursive;
+    font-weight: bold;
+}
+.summary{
+    padding-left: 80px;
+}
+
+.sum{
+    width:500px;
+    border: 1px solid rgba(71, 70, 70, 0.473);
+    padding: 20px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
