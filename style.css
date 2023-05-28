@@ -395,3 +395,45 @@ footer img{
     margin-top: 5px;
 }
 
+.cus{
+    padding-left: 500px;
+    font-size: 40px;
+    font-family:cursive;
+    font-weight: bold;
+}  
+.viratkohli{
+    height:200px;
+    position: relative;
+    left:500px;
+    top:50px;
+}
+.customer{
+    display: flex;
+    background-color: rgba(177, 174, 171, 0.283);
+}
+.p1{
+    position: relative;
+    left:720px;
+    font-family:cursive;
+    font-size: 20px;
+    width:300px;
+    bottom:150px;
+    
+}
+#left{
+    height:50px;
+    position: relative;
+    left:450px;
+    top:150px;
+}
+#right{
+    height:50px;
+    position: relative;
+    left:750px;
+    top:150px;
+}
+.c1{
+    display:none;
+}
+
+

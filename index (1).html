@@ -206,6 +206,24 @@
             <p class="para">Average order value from our platform is generally more than Rs 250. However, in some cases, users want to try out your place by ordering for lesser amount. But we have observed that they eventually come back with higher value orders if they like your food.</p>
         </details>
     </div>
+    <h1 class="cus">Our Happy Customers</h1>
+    <div class="customer">
+        
+        <button id="left" onclick="decrease()"><span>&#10094</span></button>
+        <div class="c1">
+            <img class="viratkohli" src="virat kohli.jpg" >
+            <p class="p1">" Every time i unlock my device,I just feel blessed. Amazing deal and superb hospitality! Good Job Zomato team! "</p>
+        </div>
+        <div class="c1">
+            <img class="viratkohli" src="varun.jpg" width="200px">
+            <p class="p1">" Best food delivery app ! Food was delivered in just 5 min. Awsome customer service. Happy to find zomato is there to fulfil my food requirements. "</p>
+        </div>
+        <div class="c1">
+            <img class="viratkohli" src="garima.jpg" width="200px">
+            <p class="p1">" Being a mother and a chef,I have extreme trust on zomato that it will always provide best and most hygenic food. "</p>
+        </div>
+        <button id="right" onclick="increase()"><span>&#10095</span></button>
+    </div>
     <footer>
         <div class="footer">
             <img src="zomatologo.png">
@@ -403,7 +421,7 @@ function sizeg(){
     img.style.transition = "transform 0.25s ease";
 }
 
-var countDownDate = new Date("May 24, 2024 15:37:25").getTime();
+var countDownDate = new Date("May 29, 2024 15:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -456,6 +474,32 @@ function show(){
      showp.textContent="Show More";
      }
 }
+
+let slide = document.getElementsByClassName("c1");
+    slide[0].style.display = "block";
+
+    let idx = 0;
+    function decrease() {
+        if (idx == 0)
+            idx = 2
+        else
+            idx--;
+        for (let element of slide) {
+            element.style.display = "none";
+        };
+        slide[idx].style.display = "block";
+    }
+
+    function increase() {
+        if (idx == 2)
+            idx = 0;
+        else
+            idx++;
+        for (let element of slide) {
+            element.style.display = "none";
+        };
+        slide[idx].style.display = "block";
+    }
     </script>
 </body>
 
