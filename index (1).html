@@ -34,7 +34,8 @@
     </div>
     <br>
     <marquee class="marq" direction="left">ARE U HUNGRY ? DON'T WAIT &nbsp; &nbsp;<b>ORDER NOW!!!</b></marquee>
-    <br>
+    <br><br>
+    <h1 class="inspiration">Inspiration For Your First Order</h1>
     <div class="bigdiv">
     <div class="offer">
         <div class="close" onclick="destroy()">
@@ -157,10 +158,11 @@
             <button type="order">Order Now</button>
         </div> -->
     </div>
-    <br><br><br><br>
+    <br><br>
     <div class="show" onclick="show()">
-        <h2>Show More</h2>
+        <button><h2 class="showpara">Show More</h2></button>
     </div>
+    <br><br>
     <img src="live order track.png" width="100%">
     <div class="freq">
         <h1>FREQUENTLY ASKED QUESTIONS</h1>
@@ -442,9 +444,17 @@ setInterval(changeBackgroundImage, 10000);
 //     changeBackgroundImage;
 // }, 3000);
  var showm=document.getElementsByClassName("container1")[0]
-
+ var showp=document.getElementsByClassName("showpara")[0]
 function show(){
+    var currentp = showp.textContent
+ console.log(currentp);
+    if(currentp.includes("More")){
      showm.style.display="flex";
+     showp.textContent="Show Less";}
+     else{
+     showm.style.display="none";
+     showp.textContent="Show More";
+     }
 }
     </script>
 </body>
